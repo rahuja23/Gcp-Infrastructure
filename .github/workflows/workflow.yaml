@@ -31,7 +31,7 @@ jobs:
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
       - name: Terraform Apply
-        if: github.ref == 'refs/head/main' && github.event_name== 'push'
+        if: github.ref == 'refs/head/main'
         run: terraform apply -auto-approve
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
