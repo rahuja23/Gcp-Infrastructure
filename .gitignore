@@ -8,6 +8,9 @@ __pycache__/
 blogpost-demo-3f9fd4ca1674.json
 # Distribution / packaging
 .Python
+blogpost-demo-a108282c2d25.json
+.terraform
+.terraform.lock.hcl
 build/
 develop-eggs/
 dist/

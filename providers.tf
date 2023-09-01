@@ -1,11 +1,12 @@
 provider "google" {
+  credentials = file("/Users/rachitahuja/Desktop/Gcp-Infrastructure/blogpost-demo-a108282c2d25.json")
   project = var.project_id
   region  = var.region
 }
 
 terraform {
   backend "gcs" {
-    bucket = "round-bounty-363611-tfstate"
+    bucket = "blogpost-tfstate"
     prefix = "terraform/state"
   }
 }
