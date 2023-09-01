@@ -27,8 +27,8 @@ jobs:
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
       - name: Terraform Fmt
-          run: terraform fmt -check
-          env:
+        run: terraform fmt -check
+        env:
             GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
       - name: Terraform Plan
         run: terraform plan
